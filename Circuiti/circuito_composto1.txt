@@ -1,0 +1,9 @@
+module NOME_CIRCUITO_COMPOSITO (
+clk
+input a, b
+input c, d
+output x
+);
+circuito_sequenziale3 instance (.a = a, .b = b, .c = c, .x = d, .y=FF1 )
+assign x = NOT c XOR d NAND (a OR FF1) OR d OR FF1
+endmodule

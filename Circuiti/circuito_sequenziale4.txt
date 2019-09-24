@@ -1,0 +1,12 @@
+module NOME_CIRCUITO_SEQUENZIALE (
+clk
+input a, b
+input c,d
+input e
+output x
+output y
+);
+FF1 = b XOR NOT a 
+assign y = e NAND (a OR NOT b) NOR c
+assign x = d NOR NOT FF1
+endmodule

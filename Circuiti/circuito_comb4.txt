@@ -1,0 +1,8 @@
+module circuito_comb1 (
+input a, b
+input c
+output x, y
+);
+assign x = c NOR (a XOR b) AND NOT a
+
+endmodule

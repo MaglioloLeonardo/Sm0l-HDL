@@ -1,0 +1,10 @@
+module circuito_comb1 (
+input a, b
+input c, d
+input e
+output x
+output y
+);
+assign x = NOT a OR (NOT b XOR NOT d)
+assign y =  e AND (b NAND a)
+endmodule

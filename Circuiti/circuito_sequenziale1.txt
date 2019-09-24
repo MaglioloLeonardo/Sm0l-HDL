@@ -1,0 +1,10 @@
+module NOME_CIRCUITO_SEQUENZIALE (
+clk
+input a, b
+input c, d
+output x
+);
+FF1 = a AND b OR NOT b 
+FF2 = NOT d OR ( c AND c)
+assign x = FF1 OR NOT FF2
+endmodule

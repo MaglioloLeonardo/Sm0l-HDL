@@ -1,0 +1,9 @@
+module NOME_CIRCUITO_COMB (
+input a, b
+input c, d
+output x, y, z
+);
+assign x = c
+assign y = NOT c AND (NOT a OR (NOT d OR b))
+assign z = a AND NOT a OR (b OR NOT d)
+endmodule
