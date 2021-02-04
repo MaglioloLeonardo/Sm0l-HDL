@@ -13,7 +13,7 @@ Supporting:
 		<ul>
 			<li>Shortest input-output path</li>
 			<li>Longest input-output path</li>
-			<li><Logic cones calculation</li>
+			<li>Logic cones calculation</li>
 		</ul>
 </ul>
 
