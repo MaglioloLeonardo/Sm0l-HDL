@@ -16,10 +16,10 @@ Simple Hardware Description Language (inspired by Verilog sintax) simulator; Sup
 
 It is also possible assembling circuits together via keyword 'instance', as described in the grammar LL2 associated with the respository at: 'Documenti/Grammmatiche.pdf'.
 
-For all modes apart from 'Library':
+For all the modes apart from 'Library':
 <ul>
 	<li>All the defined circuits should be placed in the folder named 'Circuiti'.</li>
 	<li>All the defined input matrix for circuits should be placed in the folder named 'Inputs', with the same file name as the circuit it refers to.</li>
 </ul>
 Every row of the input matrix should have lenght equals to the number of inputs of the circuit. <br>
-If more row will be defined the simulator will print the circuit's output for every row in the input matrix
+If more row will be defined the simulator will print the circuit output for every row in the input matrix
