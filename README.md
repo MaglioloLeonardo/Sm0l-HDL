@@ -1,14 +1,18 @@
 # Sm0l-HDL
 Simple Hardware Description Language (inspired by Verilog sintax) simulator; 
 
+
+
+<ul>
 Supporting:
-	-Simulation on input assingment:
-		-Logic gates
-		-Flip flops
-	-Analisys:
-		-Shortest input-output path
-		-Longest input-output path
-		-Logic cones calculation
+	<li>-Simulation on input assingment:</li>
+		<li>-Logic gates</li>
+		<li>-Flip flops</li>
+	<li>-Analisys:</li>
+		<li>-Shortest input-output path</li>
+		<li>-Longest input-output path</li>
+		<li>-Logic cones calculation</li>
+</ul>
 
 It is also possible assembling circuits together via keyword 'instance', as described in the grammar LL2 associated with the respository at: 'Documenti/Grammmatiche.pdf'.
 
