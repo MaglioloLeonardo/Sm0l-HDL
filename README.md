@@ -1,13 +1,10 @@
 # Sm0l-HDL
-Simple Hardware Description Language (inspired by Verilog sintax) simulator; 
-
-
-Supporting:
+Simple Hardware Description Language (inspired by Verilog sintax) simulator; Supporting:
 <ul>
 	<li>Simulation on input assingment:</li>
 		<ul>
 			<li>Logic gates</li>
-			<li><Flip flops</li>
+			<li>Flip flops</li>
 		</ul>
 	<li>Analisys:</li>
 		<ul>
