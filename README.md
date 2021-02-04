@@ -1,5 +1,5 @@
 # Sm0l-HDL
-Simple Hardware Description Language (inspired by Verilog sintax) simulator; Supporting:
+Simple Hardware Description Language simulator (inspired by Verilog sintax); Supporting:
 <ul>
 	<li>Simulation on input assingment:</li>
 		<ul>
