@@ -6,7 +6,7 @@ Simple Hardware Description Language (inspired by Verilog sintax) simulator;
 <ul>
 Supporting:
 	<li>-Simulation on input assingment:</li>
-		<li>|	-Logic gates</li>
+		<li>#	-Logic gates</li>
 		<li>|	-Flip flops</li>
 	<li>-Analisys:</li>
 		<li>|	-Shortest input-output path</li>
