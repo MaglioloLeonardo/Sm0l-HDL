@@ -19,5 +19,8 @@ It is also possible assembling circuits together via keyword 'instance', as desc
 For all modes apart from 'Library':
 <ul>
 	<li>All the defined circuits should be placed in the folder named 'Circuiti'.</li>
-	<li>All the defined input for circuits should be placed in the folder named 'Inputs', with the same file name as the circuit it refers to. </li>
+	<li>All the defined input matrix for circuits should be placed in the folder named 'Inputs', with the same file name as the circuit it refers to. <br>
+	    Every row of the input matrix should have lenght equals to the number of inputs of the circuit. <br>
+            If more row will be defined the simulator will print the circuit's output for every row in the input matrix
+	</li>
 </ul>
