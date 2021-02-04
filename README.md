@@ -6,12 +6,16 @@ Simple Hardware Description Language (inspired by Verilog sintax) simulator;
 <ul>
 Supporting:
 	<li>Simulation on input assingment:</li>
-		<li><space>Logic gates</li>
-		<li><space>Flip flops</li>
+		<ul>
+			<li>Logic gates</li>
+			<li><Flip flops</li>
+		</ul>
 	<li>Analisys:</li>
-		<li><space>Shortest input-output path</li>
-		<li><space>Longest input-output path</li>
-		<li><space>Logic cones calculation</li>
+		<ul>
+			<li>Shortest input-output path</li>
+			<li>Longest input-output path</li>
+			<li><Logic cones calculation</li>
+		</ul>
 </ul>
 
 It is also possible assembling circuits together via keyword 'instance', as described in the grammar LL2 associated with the respository at: 'Documenti/Grammmatiche.pdf'.
