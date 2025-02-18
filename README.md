@@ -75,19 +75,6 @@ endmodule</code></pre>
     <li><strong>Loop Detection:</strong> Identification of feedback loops in sequential circuits.</li>
     <li><strong>Optimized Parsing:</strong> Improvement of execution speed for large circuits.</li>
   </ul>
-
-  <hr>
-  
-  <h3>What's Included:</h3>
-  <ul>
-    <li>Everything in a single Markdown file</li>
-    <li>GitHub-friendly formatting for easy viewing</li>
-    <li>Code examples, logic cones, and path analysis</li>
-    <li>⚡ Circuit icon instead of 🖧</li>
-    <li>Ready to be directly copied into <code>README.md</code></li>
-  </ul>
-  
-  <hr>
   
   <p>🔥 <strong>Sm0l-HDL</strong> is a lightweight and efficient simulator for modeling and analyzing digital circuits. Explore, test, and contribute! 🚀</p>
 </body>
