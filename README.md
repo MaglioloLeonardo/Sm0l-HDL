@@ -1,47 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>⚡ Sm0l-HDL: A Simple Hardware Description Language Simulator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
-      background-color: #fff;
-      color: #333;
-    }
-    h1, h2, h3, h4 {
-      color: #222;
-    }
-    pre {
-      background-color: #f4f4f4;
-      padding: 10px;
-      border: 1px solid #ddd;
-      overflow: auto;
-    }
-    code {
-      background-color: #f4f4f4;
-      padding: 2px 4px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 0.5em;
-    }
-    ul li ul {
-      margin-top: 0.5em;
-      margin-left: 20px;
-      list-style-type: disc;
-    }
-    hr {
-      margin: 2em 0;
-    }
-  </style>
-</head>
+<html lang="en">
 <body>
   <h1>⚡ Sm0l-HDL: A Simple Hardware Description Language Simulator</h1>
   <p><strong>Sm0l-HDL</strong> è un simulatore per <strong>Hardware Description Language (HDL)</strong>, ispirato alla sintassi di <strong>Verilog</strong> e sviluppato in <strong>C++</strong>. Consente la simulazione e l'analisi di <strong>circuiti digitali</strong>, supportando <strong>porte logiche, flip-flop, composizione gerarchica dei circuiti e analisi logica</strong>.</p>
