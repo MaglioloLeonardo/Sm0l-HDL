@@ -2,38 +2,38 @@
 <html lang="en">
 <body>
   <h1>⚡ Sm0l-HDL: A Simple Hardware Description Language Simulator</h1>
-  <p><strong>Sm0l-HDL</strong> è un simulatore per <strong>Hardware Description Language (HDL)</strong>, ispirato alla sintassi di <strong>Verilog</strong> e sviluppato in <strong>C++</strong>. Consente la simulazione e l'analisi di <strong>circuiti digitali</strong>, supportando <strong>porte logiche, flip-flop, composizione gerarchica dei circuiti e analisi logica</strong>.</p>
+  <p><strong>Sm0l-HDL</strong> is a simulator for <strong>Hardware Description Language (HDL)</strong>, inspired by the syntax of <strong>Verilog</strong> and developed in <strong>C++</strong>. It allows the simulation and analysis of <strong>digital circuits</strong>, supporting <strong>logic gates, flip-flops, hierarchical circuit composition, and logic analysis</strong>.</p>
 
-  <h2>📄 Caratteristiche del Progetto</h2>
+  <h2>📄 Project Features</h2>
   <ul>
     <li>
-      <strong>Simulazione di Circuiti Digitali</strong>
+      <strong>Digital Circuit Simulation</strong>
       <ul>
-        <li>Supporta circuiti <strong>combinazionali</strong> (porte logiche) e circuiti <strong>sequenziali</strong> (D flip-flop).</li>
-        <li>Esegue descrizioni dei circuiti simili a <strong>Verilog</strong>, utilizzando una grammatica semplificata.</li>
+        <li>Supports <strong>combinational circuits</strong> (logic gates) and <strong>sequential circuits</strong> (D flip-flops).</li>
+        <li>Executes circuit descriptions similar to <strong>Verilog</strong>, using a simplified grammar.</li>
       </ul>
     </li>
     <li>
-      <strong>Strumenti di Analisi del Circuito</strong>
+      <strong>Circuit Analysis Tools</strong>
       <ul>
-        <li>Calcola i <strong>percorsi più brevi</strong> e i <strong>percorsi più lunghi</strong> dagli ingressi alle uscite.</li>
-        <li>Determina i <strong>logic cones</strong>, identificando gli ingressi che influenzano ciascuna uscita.</li>
+        <li>Calculates the <strong>shortest paths</strong> and <strong>longest paths</strong> from inputs to outputs.</li>
+        <li>Determines <strong>logic cones</strong>, identifying the inputs that affect each output.</li>
       </ul>
     </li>
     <li>
-      <strong>Composizione Gerarchica dei Circuiti</strong>
+      <strong>Hierarchical Circuit Composition</strong>
       <ul>
-        <li>Supporta il design modulare dei circuiti tramite la parola chiave <code>instance</code>.</li>
-        <li>I circuiti possono essere <strong>assemblati insieme</strong> usando descrizioni gerarchiche.</li>
+        <li>Supports modular circuit design through the <code>instance</code> keyword.</li>
+        <li>Circuits can be <strong>assembled together</strong> using hierarchical descriptions.</li>
       </ul>
     </li>
   </ul>
 
-  <h2>🚀 Dettagli di Implementazione</h2>
-  <h3>Sintassi per la Descrizione dei Circuiti</h3>
-  <p>Sm0l-HDL utilizza una sintassi <strong>semplificata in stile Verilog</strong>. Di seguito alcuni esempi di descrizioni dei circuiti:</p>
+  <h2>🚀 Implementation Details</h2>
+  <h3>Circuit Description Syntax</h3>
+  <p>Sm0l-HDL uses a <strong>simplified Verilog-like syntax</strong>. Below are some examples of circuit descriptions:</p>
   
-  <h4>Esempio: Circuito Combinazionale</h4>
+  <h4>Example: Combinational Circuit</h4>
   <pre><code class="language-verilog">module AND_GATE (
   input a, b,
   output x
@@ -41,7 +41,7 @@
   assign x = a AND b;
 endmodule</code></pre>
   
-  <h4>Esempio: Circuito Sequenziale con Flip-Flop</h4>
+  <h4>Example: Sequential Circuit with Flip-Flops</h4>
   <pre><code class="language-verilog">module SEQ_CIRCUIT (
   clk,
   input a, b,
@@ -52,43 +52,43 @@ endmodule</code></pre>
   assign x = FF1 OR FF2;
 endmodule</code></pre>
   
-  <h3>Analisi Logica</h3>
-  <p>Il simulatore fornisce strumenti avanzati per comprendere il comportamento del circuito:</p>
+  <h3>Logic Analysis</h3>
+  <p>The simulator provides advanced tools to understand the circuit's behavior:</p>
   <ul>
-    <li><strong>Shortest Path Analysis:</strong> Identifica il percorso di propagazione del segnale più breve dall'ingresso all'uscita.</li>
-    <li><strong>Longest Path Analysis:</strong> Determina il ritardo di propagazione massimo all'interno del circuito.</li>
-    <li><strong>Logic Cones:</strong> Analizza le dipendenze tra ingressi e uscite, mappando l'influenza di ogni ingresso sul risultato finale.</li>
+    <li><strong>Shortest Path Analysis:</strong> Identifies the shortest signal propagation path from input to output.</li>
+    <li><strong>Longest Path Analysis:</strong> Determines the maximum propagation delay within the circuit.</li>
+    <li><strong>Logic Cones:</strong> Analyzes the dependencies between inputs and outputs, mapping the influence of each input on the final result.</li>
   </ul>
-  <p><strong>Esempio: Logic Cone per l'Uscita X</strong></p>
-  <p>Se <code>X = A AND (B OR C)</code>, il logic cone per <code>X</code> include <code>{A, B, C}</code>, poiché tutti e tre gli ingressi contribuiscono al risultato finale.</p>
+  <p><strong>Example: Logic Cone for Output X</strong></p>
+  <p>If <code>X = A AND (B OR C)</code>, the logic cone for <code>X</code> includes <code>{A, B, C}</code> since all three inputs contribute to the final result.</p>
 
-  <h2>📂 Struttura del Progetto</h2>
+  <h2>📂 Project Structure</h2>
   <ul>
-    <li><strong>Circuiti/</strong> → Cartella contenente i circuiti definiti.</li>
-    <li><strong>Inputs/</strong> → Cartella contenente le matrici di input per ciascun circuito.</li>
-    <li><strong>Documenti/Grammatiche.pdf</strong> → Specifica dettagliata della grammatica LL(2).</li>
+    <li><strong>Circuits/</strong> → Folder containing the defined circuits.</li>
+    <li><strong>Inputs/</strong> → Folder containing the input matrices for each circuit.</li>
+    <li><strong>Documents/Grammars.pdf</strong> → Detailed specification of the LL(2) grammar.</li>
   </ul>
 
-  <h2>📈 Possibili Sviluppi Futuri</h2>
+  <h2>📈 Future Enhancements</h2>
   <ul>
-    <li><strong>Analisi del Consumo Energetico:</strong> Stima del consumo energetico per ogni transizione logica.</li>
-    <li><strong>Rilevamento di Loop:</strong> Identificazione dei loop di retroazione nei circuiti sequenziali.</li>
-    <li><strong>Parsing Ottimizzato:</strong> Miglioramento della velocità di esecuzione per circuiti di grandi dimensioni.</li>
+    <li><strong>Power Analysis:</strong> Estimation of energy consumption per logic transition.</li>
+    <li><strong>Loop Detection:</strong> Identification of feedback loops in sequential circuits.</li>
+    <li><strong>Optimized Parsing:</strong> Improvement of execution speed for large circuits.</li>
   </ul>
 
   <hr>
   
-  <h3>Cosa Include:</h3>
+  <h3>What's Included:</h3>
   <ul>
-    <li>Tutto in un unico file Markdown</li>
-    <li>Formattazione GitHub corretta per una facile visualizzazione</li>
-    <li>Esempi di codice, logic cones e analisi dei percorsi</li>
-    <li>⚡ Icona del circuito al posto di 🖧</li>
-    <li>Pronto per essere copiato direttamente in <code>README.md</code></li>
+    <li>Everything in a single Markdown file</li>
+    <li>GitHub-friendly formatting for easy viewing</li>
+    <li>Code examples, logic cones, and path analysis</li>
+    <li>⚡ Circuit icon instead of 🖧</li>
+    <li>Ready to be directly copied into <code>README.md</code></li>
   </ul>
   
   <hr>
   
-  <p>🔥 <strong>Sm0l-HDL</strong> è un simulatore leggero ed efficiente per la modellazione e l'analisi dei circuiti digitali. Esplora, testa e contribuisci! 🚀</p>
+  <p>🔥 <strong>Sm0l-HDL</strong> is a lightweight and efficient simulator for modeling and analyzing digital circuits. Explore, test, and contribute! 🚀</p>
 </body>
 </html>
